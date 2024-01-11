@@ -48,6 +48,8 @@ final class RMRequest {
         return URL(string: urlString)
     }
     
+    public let httpMethod = "GET"
+    
     public init(endPoint: RMEndPoint, pathComponents: [String], queryParameter: [URLQueryItem]) {
         self.endPoint = endPoint
         self.pathComponent = pathComponents
